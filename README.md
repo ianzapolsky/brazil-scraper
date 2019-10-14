@@ -15,3 +15,11 @@
    cd DATUMS
    watch 'ls | wc -l'
    ```
+
+## Instructions to create ids.txt
+
+I've created a file that just contains the IDs you're looking for with the
+following command:
+```bash
+cat acordo_colectivo_salarios.csv | cut -d, -f3 | tail -n +2 > ids.txt
+```
